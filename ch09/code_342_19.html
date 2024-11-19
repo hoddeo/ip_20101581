@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function problem19() {
+            const year = parseInt(prompt("태어난 연도를 입력하세요:", "2000"), 10);
+            if (!isNaN(year)) {
+                const animals = ["원숭이", "닭", "개", "돼지", "쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양"];
+                const zodiac = animals[year % 12];
+                alert(`${year}년생은 ${zodiac} 띠입니다.`);
+            } else {
+                alert("올바른 연도를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

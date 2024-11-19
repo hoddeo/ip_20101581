@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function problem16() {
+            const cm = parseFloat(prompt("센티미터를 입력하세요:", "100"));
+            if (!isNaN(cm)) {
+                const feet = Math.floor(cm / 30.48); // 1피트 = 30.48cm
+                const inch = (cm / 2.54) % 12; // 1인치 = 2.54cm
+                alert(`${cm}cm는 ${feet}피트 ${inch.toFixed(2)}인치입니다.`);
+            } else {
+                alert("올바른 숫자를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

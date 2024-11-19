@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function problem17() {
+            const radius = parseFloat(prompt("반지름을 입력하세요:", "5"));
+            const height = parseFloat(prompt("높이를 입력하세요:", "10"));
+            if (!isNaN(radius) && !isNaN(height)) {
+                const volume = Math.PI * Math.pow(radius, 2) * height;
+                alert(`반지름 ${radius}와 높이 ${height}의 원기둥 부피는 ${volume.toFixed(2)}입니다.`);
+            } else {
+                alert("올바른 숫자를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function problem18() {
+            const input = parseInt(prompt("네 자리 정수를 입력하세요:", "1234"), 10);
+            if (!isNaN(input) && input >= 1000 && input <= 9999) {
+                const thousand = Math.floor(input / 1000);
+                const hundred = Math.floor((input % 1000) / 100);
+                const ten = Math.floor((input % 100) / 10);
+                const one = input % 10;
+                alert(`천의 자리: ${thousand}, 백의 자리: ${hundred}, 십의 자리: ${ten}, 일의 자리: ${one}`);
+            } else {
+                alert("올바른 네 자리 정수를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

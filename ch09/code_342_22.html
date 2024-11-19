@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function problem22() {
+            const book = {
+                이름: "C# 프로그래밍(2판)",
+                초판_발행: "2021년 1월 5일",
+                지은이: "윤인성",
+                펴낸이: "진태호",
+                펴낸곳: "한빛아카데미(주)",
+                책임편집: "김성무",
+                기획: "김수빈",
+                편집: "정세현",
+                디자이너: "최영희, 이완"
+            };
+
+            let result = "책 정보:\n";
+            for (const [key, value] of Object.entries(book)) {
+                result += `${key}: ${value}\n`;
+            }
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
